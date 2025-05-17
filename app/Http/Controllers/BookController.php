@@ -43,7 +43,7 @@ class BookController extends Controller
         return view('books.edit', compact('book'));
     }
 
-    public function update(Request $request, Book $book)
+    public function update (Request $request, Book $book)
     {
         $validated = $request->validate([
             'judul' => 'required|string|max:255',      
